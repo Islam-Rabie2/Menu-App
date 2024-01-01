@@ -1,10 +1,9 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
-import Slide from 'react-reveal/Slide';
+
 const ItemsList = ({ itemsData }) => {
   return (
     <Row>
-     <Slide left>
         {itemsData.length >= 1 ? (
           itemsData.map((item) => {
             return (
@@ -35,7 +34,6 @@ const ItemsList = ({ itemsData }) => {
         ) : (
           <h3 className="text-center">لا يوجد اصناف</h3>
         )}
-      </Slide>
     </Row>
   );
 };

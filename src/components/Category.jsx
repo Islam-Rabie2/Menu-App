@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
-import Roll from 'react-reveal/Roll';
+
 
 const Category = ({ filterbyCategory, allCategory }) => {
 
@@ -11,7 +11,7 @@ const Category = ({ filterbyCategory, allCategory }) => {
     return (
         <Row className="my-2 mb-5">
             <Col className="d-flex justify-content-center">
-                <Roll>
+              
                     {
                         allCategory.length >= 1 ? (allCategory.map((cat) => {
                             return (
@@ -21,7 +21,7 @@ const Category = ({ filterbyCategory, allCategory }) => {
                             )
                         })) : <h4>لا يوجد تصنيفات لاان</h4>
                     }
-                </Roll>
+                
             </Col>
         </Row>
     )
